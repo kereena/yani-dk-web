@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "node"
+
+script: true
+
+deploy:
+  provider: surge
+  project: ./www/
+  domain: yani.dk
+  on:
+    branch: master
+env:
+  secure: "rm62/d9czRg2M807cGDXK6PyYAyLgOHqR9O3xkvh3z6siu+LorNzwQdupkbTQX3Jkd+cAK1vORoJ8M5WR8rIKJoOe8XD8B3gmfXyVUykAdPq/T52e3Z4/8q+x3+7PE7AgaQR6l8NDQ6sdaEmcW1nere0G/1EvqP5KpstrcDjsuE3/H89vEtXdLFCFliYMd2l6cYHTwJfdfp5NGshJ4EuuCmPGQ4RI2zkrlLs+WhMMwbeqha3Vh5/QdvQhT66WioYIFkF1DjrwDRrjU4aQrGVAZIKHw2z7mG4/BTaZeU+EMjy5DsAYRJLl2s9ODowHL3vUhDqXWJUNxqnn7b0o2h2MxEgVTcE4SlwGp/Sio7aASgh+xzqsiQP1om/cfsNi+f/IrTNmUBWzZDocmrhwgKgojerJjOTCwTEmdozcomOX5pipl5IQKSB9DdzgiaTvxtbG/nojCXJk44HC5MC2u9kfcfUqyAVLh53fXB8zQZYnZ1DSTk8kbEIys3I0Li2LMZUfcU1uZfaXaOXgqdHiEcqYaVpxK2RYretRWLDH4yxROKJwuCCpk1ccryT60dk/dKDutEN5udcp2BQmBv2bxV5aHizVykE+sYMJlPUqXbOemamJrPlAjdtttUFyoduHOGjhPNvRAiICiV+WlAijS75FArIF+zKzagEIqFMsAowWTE="
